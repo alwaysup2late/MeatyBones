@@ -16,3 +16,12 @@ Features
   <li>jQuery-Less, using pure JavaScript</li>
   <li>SASS Logic and config.rb file included</li>
 </ul>
+
+Installation
+============
+
+Layout Options
+==============
+
+Options Panel
+=============
