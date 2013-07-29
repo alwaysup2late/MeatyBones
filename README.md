@@ -7,7 +7,7 @@ Features
 ========
 
 <ul>
-  <li>HTML5</li>
+  <li>HTML5/CSS3</li>
   <li>IE7/8 Friendly*</li>
   <li>Responsive/Fluid</li>
   <li>Customizable homepage slider</li>
