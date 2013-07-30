@@ -55,5 +55,77 @@ Layout Options
 <li>Sidebar/Content (50%/50%)</li>
 </ul>
 
+Widget Areas
+============
+
+<ul>
+<li>Header</li>
+<li>Sidebar</li>
+<li>Footer Left</li>
+<li>Footer Center</li>
+<li>Footer Right</li>
+</ul>
+
 Options Panel
 =============
+
+<strong>Base Width Settings</strong>
+<ul>
+<li>1000px</li>
+<li>1200px</li>
+</ul>
+
+<strong>Logo Settings</strong>
+<ul>
+<li>Logo Image</li>
+<li>Logo Alt Text</li>
+</ul>
+
+<strong>Social Links (Widget)</strong>
+<ul>
+<li>Main Email Address</li>
+<li>Default Subject for Email</li>
+<li>Twitter Username (ex: @twitter)</li>
+<li>Facebook link</li>
+<li>LinkedIn link</li>
+<li>Display RSS Link</li>
+</ul>
+
+<strong>Slider Settings</strong>
+<ul>
+<li>Display Slider on Homepage</li>
+<li>Display Slider Previous/Next Buttons</li>
+<li>Display Slider Index Controls</li>
+</ul>
+
+<strong>Homepage Boxes</strong>
+<ul>
+<li>Home Box1 Page</li>
+<li>Home Box1 "read more" link</li>
+<li>Homepage Box2 Page</li>
+<li>Home Box2 "read more" link</li>
+<li>Home Box3 Page</li>
+<li>Home Box3 "read more" link</li>
+<li>Home Box4 Page</li>
+<li>Home Box4 "read more" link</li>
+<li>Display Homebox Titles</li>
+</ul>
+
+<strong>Homepage Blurb (Below Slider)/strong>
+<ul>
+<li>Display Homepage Blurb</li>
+<li>Display Blurb Title</li>
+<li>Blurb Content page</li>
+</ul>	
+
+<strong>Copyright Info (Footer)</strong>
+<ul>
+<li>Copyright Text (Can be HTML)</li>
+</ul>
+
+<strong>Misc</strong>
+<ul>
+<li>Meta Keywords (Head)</li>
+<li>Meta Description (Head)</li>
+<li>Tracking script (Footer)</li>
+</ul>
