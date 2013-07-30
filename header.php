@@ -39,9 +39,9 @@
 			<a href="<?php bloginfo('url'); ?>/" class="logo col6">
 				<img src="<?php echo get_option('mb_logo_img'); ?>" alt="<?php echo get_option('mb_logo_alt'); ?>" />
 			</a>
-			<section class="col5 last">
+			<aside class="col5 last">
 				<?php dynamic_sidebar('top_widget'); ?>
-			</section>
+			</aside>
 			
 			<?php 
 				if (function_exists('wp_nav_menu')) {

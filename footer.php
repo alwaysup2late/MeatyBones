@@ -9,40 +9,40 @@
 		<?php }?>		
 			<?php if (function_exists('is_sidebar_active') && is_sidebar_active('footer_left')) { ?>
 				<?php if (is_sidebar_active('footer_left') && !is_sidebar_active('footer_center') && !is_sidebar_active('footer_right')) { ?>
-					<aside class="col12">
+					<div class="col12">
 				<?php } elseif (is_sidebar_active('footer_left') && is_sidebar_active('footer_center') && !is_sidebar_active('footer_right')) {?>
-					<aside class="col6">
+					<div class="col6">
 				<?php } else {?>
-					<aside class="col4">
+					<div class="col4">
 				<?php }?>
 					<?php dynamic_sidebar('footer_left'); ?>
-				</aside>
+				</div>
 				<?php if (is_sidebar_active('footer_center')) { ?>
 					<?php if (is_sidebar_active('footer_left') && is_sidebar_active('footer_center') && !is_sidebar_active('footer_right')) {?>
-					     <aside class="col6 last">
+					     <div class="col6 last">
 					<?php } else {?>
-					     <aside class="col4">
+					     <div class="col4">
 					<?php }?>
 						<?php dynamic_sidebar('footer_center'); ?>
-					</aside>
+					</div>
 				<?php } ?>
 				<?php if (is_sidebar_active('footer_right')) { ?>
 					<?php if (is_sidebar_active('footer_left') && is_sidebar_active('footer_center') && !is_sidebar_active('footer_right')) {?>
-					     <aside class="col6">
+					     <div class="col6">
 					<?php } else {?>
-					     <aside class="col4 last">
+					     <div class="col4 last">
 					<?php }?>
 						<?php dynamic_sidebar('footer_right'); ?>
-					</aside>
+					</div>
 				<?php } ?>
 			<?php } ?>
-			<section class="copyright col12">
+			<div class="copyright col12">
 				<?php 
 					if (get_option('mb_copyright') <> "") {
 						echo stripslashes(get_option('mb_copyright'));
 					}
 				?>
-			</section>
+			</div>
 
 			<div class="clearfix"></div>
 		</section>
