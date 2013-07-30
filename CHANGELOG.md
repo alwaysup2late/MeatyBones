@@ -60,4 +60,5 @@
 <strong>V1.0.9</strong>
 <ul>
 <li>Modulated functions.php</li>
+<li>Removed symbols from read more links</li>
 </ul>
