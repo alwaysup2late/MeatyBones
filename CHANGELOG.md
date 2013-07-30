@@ -49,3 +49,10 @@
 <ul>
 <li>Added a fix for nav links for sliders</li>
 </ul>
+
+<strong>V1.0.8</strong>
+<ul>
+<li>Updated HTML5 elements</li>
+<li>Included a custom Connect Widget</li>
+<li>Added more config options to Theme Options</li>
+</ul>
