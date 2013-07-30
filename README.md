@@ -42,5 +42,18 @@ Installation
 Layout Options
 ==============
 
+<ul>
+<li>Homepage (Configure from "Theme Options" panel)</li>
+<li>Content Full (100%)</li>
+<li>Content/Sidebar (50%/50%)</li>
+<li>Content/Sidebar (60%/40%)</li>
+<li>Content/Sidebar (70%/30%)</li>
+<li>Content/Sidebar (80%/20%)</li>
+<li>Sidebar/Content (80%/20%)</li>
+<li>Sidebar/Content (70%/30%)</li>
+<li>Sidebar/Content (60%/40%)</li>
+<li>Sidebar/Content (50%/50%)</li>
+</ul>
+
 Options Panel
 =============
