@@ -139,8 +139,6 @@ function mb_theme_page() {
 			'home_box3_link',
 			'home_box4',
 			'home_box4_link',
-			'home_box5',
-			'home_box5_link',
 			'hb_title_enable',
 			'home_blurb',
 			'blurb_enable',
@@ -504,7 +502,7 @@ function mb_settings() {?>
 
 			<fieldset style="border:1px solid #ddd; padding-bottom:20px; margin-top:20px;">
 				<legend style="margin-left:5px; padding:0 5px; color:#2481C6;text-transform:uppercase;">
-					<strong>SEO</strong>
+					<strong>Misc.</strong>
 				</legend>
 				<table class="form-table">
 					<tr>
