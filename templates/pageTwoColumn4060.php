@@ -6,6 +6,14 @@
 
 <?php get_header(); ?>
 
+<?php
+	if (has_post_thumbnail()) {
+		echo '<section col12>';
+			the_post_thumbnail('full');
+		echo '</section>';
+	}
+?>
+
 <aside class="col5">
 	<?php get_sidebar(); ?>
 </aside>

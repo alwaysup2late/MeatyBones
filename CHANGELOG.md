@@ -61,4 +61,5 @@
 <ul>
 <li>Modulated functions.php</li>
 <li>Removed symbols from read more links</li>
+<li>Added support for featured images at the top of pages</li>
 </ul>
