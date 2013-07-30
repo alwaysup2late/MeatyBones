@@ -44,3 +44,8 @@
 <li>Fixed unclosed tag in header.php</li>
 <li>Added "innerPage" body class to inner pages</li>
 </ul>
+
+<strong>V1.0.7</strong>
+<ul>
+<li>Added a fix for nav links for sliders</li>
+</ul>
