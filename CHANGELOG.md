@@ -56,3 +56,8 @@
 <li>Included a custom Connect Widget</li>
 <li>Added more config options to Theme Options</li>
 </ul>
+
+<strong>V1.0.9</strong>
+<ul>
+<li>Modulated functions.php</li>
+</ul>

@@ -1,4 +1,4 @@
-MeatyBones V1.0.8
+MeatyBones V1.0.9
 =================
 
 MeatyBones is a WordPress base theme that is similar to the <a href="http://themble.com/bones/" target="_blank">Bones</a> HTML/WordPress framework in that it is a clean slate ready for an asthetic makeover. MB is an improvement in that there are more backend framework type features included and many common widget and content areas are included. The latest iteration of MeatyBones is using the 1% Grid developed by <a href="http://onepcssgrid.mattimling.com/" target="_blank">Matt Imling</a>. This grid has been included in page/post templates ready for use as well as the home page template.
