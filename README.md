@@ -112,7 +112,7 @@ Options Panel
 <li>Display Homebox Titles</li>
 </ul>
 
-<strong>Homepage Blurb (Below Slider)/strong>
+<strong>Homepage Blurb (Below Slider)</strong>
 <ul>
 <li>Display Homepage Blurb</li>
 <li>Display Blurb Title</li>
