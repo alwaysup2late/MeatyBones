@@ -1,0 +1,488 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+/* line 15, ../sass/includes/_reset.scss */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* line 26, ../sass/includes/_reset.scss */
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+/* line 33, ../sass/includes/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+/* line 36, ../sass/includes/_reset.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+/* line 40, ../sass/includes/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 42, ../sass/includes/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../sass/includes/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 49, ../sass/includes/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 51, ../sass/includes/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 53, ../sass/includes/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+/* line 56, ../sass/includes/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 57, ../sass/includes/_reset.scss */
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+/* line 58, ../sass/includes/_reset.scss */
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+/* line 60, ../sass/includes/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 62, ../sass/includes/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 64, ../sass/includes/_reset.scss */
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+/* line 71, ../sass/includes/_reset.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 72, ../sass/includes/_reset.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 73, ../sass/includes/_reset.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 74, ../sass/includes/_reset.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 76, ../sass/includes/_reset.scss */
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+/* line 78, ../sass/includes/_reset.scss */
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/* line 80, ../sass/includes/_reset.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 82, ../sass/includes/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 84, ../sass/includes/_reset.scss */
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+/* line 88, ../sass/includes/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 89, ../sass/includes/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 90, ../sass/includes/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+/* line 93, ../sass/includes/_reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+/* line 101, ../sass/includes/_reset.scss */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+/* line 104, ../sass/includes/_reset.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+/* line 107, ../sass/includes/_reset.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+/* line 110, ../sass/includes/_reset.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover */
+/* line 113, ../sass/includes/_reset.scss */
+.ie6 html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+/* let's clear some floats */
+/* line 116, ../sass/includes/_reset.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 117, ../sass/includes/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 118, ../sass/includes/_reset.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* *********************************************************************************************************************
+	One% CSS Grid - 12 Columns Fluid CSS Grid System
+
+	Why One% ? Let’s count ...
+		we have 12 columns (magic number divided by 2, 3, 4, 6)
+
+		for 12 columns we need 11 margins
+
+		so if we count margin 3%, then 3% * 11 margins = 33%
+
+		and if we count width of 1 column 5.5%, than 5.5% * 12 columns = 66%
+
+		in the end we have 33% + 66% = 99% aaand ???
+
+		1% is still here so that's the name - One%
+
+	2 starting options ? Let’s count a bit more ...
+		1200px - perfectly fits 1280 screens
+			12 columns
+			margin 3% / 36px (full-width)
+			col1 5.5% / 66px (full-width)
+
+		1000px - perfectly fits 1024 screens
+			12 columns
+			margin 3% / 30px (full-width)
+			col1 5.5% / 55px (full-width)
+*/
+/* *********************************************************************************************************************
+ * Main container for all
+ */
+/* line 36, ../sass/includes/_responsive.scss */
+.onepcssgrid-1000, .onepcssgrid-1200 {
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+  /* THAT'S THE NAME ;) */
+}
+
+/* line 41, ../sass/includes/_responsive.scss */
+.onepcssgrid-1200 {
+  max-width: 1220px;
+}
+
+/* line 45, ../sass/includes/_responsive.scss */
+.onepcssgrid-1000 {
+  max-width: 1020px;
+}
+
+/* line 49, ../sass/includes/_responsive.scss */
+.onerow {
+  clear: both;
+  padding: 0 10px;
+}
+
+/* *********************************************************************************************************************
+ * Common columns definitions
+ */
+/* line 61, ../sass/includes/_responsive.scss */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  float: left;
+  margin: 0 3% 0 0;
+}
+
+/* line 66, ../sass/includes/_responsive.scss */
+.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
+  margin: 0;
+}
+
+/* line 70, ../sass/includes/_responsive.scss */
+.col1 {
+  width: 5.5%;
+}
+
+/* line 71, ../sass/includes/_responsive.scss */
+.col2 {
+  width: 14%;
+}
+
+/* line 72, ../sass/includes/_responsive.scss */
+.col3 {
+  width: 22.5%;
+}
+
+/* line 73, ../sass/includes/_responsive.scss */
+.col4 {
+  width: 31%;
+}
+
+/* line 74, ../sass/includes/_responsive.scss */
+.col5 {
+  width: 39.5%;
+}
+
+/* line 75, ../sass/includes/_responsive.scss */
+.col6 {
+  width: 48%;
+}
+
+/* line 76, ../sass/includes/_responsive.scss */
+.col7 {
+  width: 56.5%;
+}
+
+/* line 77, ../sass/includes/_responsive.scss */
+.col8 {
+  width: 65%;
+}
+
+/* line 78, ../sass/includes/_responsive.scss */
+.col9 {
+  width: 73.5%;
+}
+
+/* line 79, ../sass/includes/_responsive.scss */
+.col10 {
+  width: 82%;
+}
+
+/* line 80, ../sass/includes/_responsive.scss */
+.col11 {
+  width: 90.5%;
+}
+
+/* line 81, ../sass/includes/_responsive.scss */
+.col12 {
+  width: 99%;
+  margin: 0;
+}
+
+/* line 83, ../sass/includes/_responsive.scss */
+.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* *********************************************************************************************************************
+ * Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math
+ */
+@media all and (min-width: 1024px) {
+  /* line 97, ../sass/includes/_responsive.scss */
+  .onepcssgrid-1000 {
+    max-width: 1000px;
+  }
+
+  /* line 101, ../sass/includes/_responsive.scss */
+  .onepcssgrid-1000 .onerow {
+    padding: 0;
+  }
+}
+/* *********************************************************************************************************************
+ * Small devices
+ */
+@media all and (max-width: 768px) {
+  /* line 117, ../sass/includes/_responsive.scss */
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
+    float: none;
+    width: 99%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 3, ../sass/includes/_base.scss */
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /* line 10, ../sass/includes/_base.scss */
+  .desktop {
+    display: none;
+  }
+}
+/* line 1, ../sass/includes/_layout.scss */
+a.logo {
+  display: block;
+}
+
+/* line 5, ../sass/includes/_layout.scss */
+header nav > select {
+  width: 100%;
+}
+
+/*
+ * Swipe 2.0
+ *
+ * Brad Birdsall
+ * Copyright 2013, MIT License
+ *
+*/
+/* line 9, ../sass/vendor/_swipejs.scss */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+/* line 14, ../sass/vendor/_swipejs.scss */
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 18, ../sass/vendor/_swipejs.scss */
+.swipe-wrap > div, .swipe-wrap > li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+/**
+ * @preserve SelectNav.js (v. 0.1)
+ * Converts your <ul>/<ol> navigation into a dropdown list for small screens
+ * https://github.com/lukaszfiszer/selectnav.js
+ */
+/* default style */
+/* line 8, ../sass/vendor/_selectnav.scss */
+.selectnav {
+  display: none;
+}
+
+/* small screen */
+@media screen and (max-width: 768px) {
+  /* line 14, ../sass/vendor/_selectnav.scss */
+  .js #nav {
+    display: none;
+  }
+
+  /* line 17, ../sass/vendor/_selectnav.scss */
+  .js .selectnav {
+    display: block;
+  }
+}

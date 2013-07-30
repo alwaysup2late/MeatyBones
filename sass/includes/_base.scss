@@ -1,0 +1,52 @@
+/**
+ * Use this file to store all of your styles that will remain constant (at least for a little while).
+ * 
+ * Possible elements:
+ * -Header
+ * -Nav
+ * -Footer
+ * -Sidebar
+ * -Fonts
+ * -Sizes
+ * -Etc, etc, etc...
+ */
+
+//Included for future support
+@viewport{
+    width: device-width;
+}
+
+//Makes sure things behave in IE10
+@-ms-viewport{
+    width: device-width;
+}
+
+//Only show on screens 768px and smaller
+@media (min-width: 769px) {
+	.mobile {
+		display: none;
+	}
+}
+
+//Only show on screens 769px and larger
+@media (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+}
+
+a.logo {
+	display: block;
+}
+
+header nav > select {
+	width: 100%;
+}
+
+#slider {
+	#prevNext {
+		span {
+			visibility: hidden;
+		}
+	}
+}

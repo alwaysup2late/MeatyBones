@@ -1,0 +1,17 @@
+/*
+Theme Name: MeatyBones Responsive WP Theme
+Version: 1.0.6
+Author: Jonathan Davis
+Author URI: http://github.com/alwaysup2late/MeatyBones
+Description: Theme developed for quick deploy and faster responsive development within WordPress.
+*/
+
+/**
+ * The styles for this live in the CSS folder within the theme folder.
+ * SASS is used to build the CSS file, it is not required but highly recommended.
+ * 
+ * Recommended Plugins:
+ * -Autoptomize
+ * -Contact Form 7
+ * -Display Widgets
+ */

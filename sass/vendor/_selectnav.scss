@@ -1,0 +1,20 @@
+/**
+ * @preserve SelectNav.js (v. 0.1)
+ * Converts your <ul>/<ol> navigation into a dropdown list for small screens
+ * https://github.com/lukaszfiszer/selectnav.js
+ */
+
+/* default style */
+.selectnav {
+	display: none;
+}
+
+/* small screen */
+@media screen and (max-width: 768px) {
+	.js #mainNav {
+		display: none;
+	}
+	.js .selectnav {
+		display: block;
+	}
+}
