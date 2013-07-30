@@ -74,7 +74,7 @@
 			<?php echo apply_filters('the_content', $box1->post_content);?>
 			<?php if (get_option('mb_home_box1_link') != null) {?>
 				<a href="<?php echo get_option('mb_home_box1_link')?>">
-					<strong>Read more &raquo;</strong>
+					<strong>Read more</strong>
 				</a>
 			<?php }?>
 		</aside>
@@ -92,7 +92,7 @@
 				<?php echo apply_filters('the_content', $box2->post_content);?>
 				<?php if (get_option('mb_home_box2_link') != null) {?>
 					<a href="<?php echo get_option('mb_home_box2_link')?>">
-						<strong>Read more &raquo;</strong>
+						<strong>Read more</strong>
 					</a>
 				<?php }?>
 			</aside>
@@ -111,7 +111,7 @@
 				<?php echo apply_filters('the_content', $box3->post_content);?>
 				<?php if (get_option('mb_home_box3_link') != null) {?>
 					<a href="<?php echo get_option('mb_home_box3_link')?>">
-						<strong>Read more &raquo;</strong>
+						<strong>Read more</strong>
 					</a>
 				<?php }?>
 			</aside>
@@ -130,7 +130,7 @@
 				<?php echo apply_filters('the_content', $box4->post_content);?>
 				<?php if (get_option('mb_home_box4_link') != null) {?>
 					<a href="<?php echo get_option('mb_home_box4_link')?>">
-						<strong>Read more &raquo;</strong>
+						<strong>Read more</strong>
 					</a>
 				<?php }?>
 			</aside>
