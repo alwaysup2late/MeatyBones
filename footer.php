@@ -108,7 +108,10 @@
 				var target = getEventTarget(event);
 
 				event.preventDefault();
-				mySwipe.slide(target.innerHTML, 400);
+				
+				if (target.tagName == 'A') {
+					mySwipe.slide(target.innerHTML, 400);
+				}
 			};
 
 			updateActiveDot = function() {
