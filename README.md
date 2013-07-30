@@ -11,7 +11,8 @@ Features
   <li>IE7/8 Friendly*</li>
   <li>Responsive/Fluid</li>
   <li>Customizable homepage slider</li>
-  <li>Customizable homepage content zones</li>
+  <li>Customizable content zones</li>
+  <li>Adaptable layout to meet content requirements</li>
   <li>Automatic creation of mobile select nav</li>
   <li>jQuery-Less, using pure JavaScript</li>
   <li>SASS Logic and config.rb file included</li>
