@@ -48,7 +48,7 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(array(
 		'id' => 'side_widget',
 		'name' => 'Sidebar',
-		'before_widget' => '<div class="rightBox">',
+		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
@@ -91,7 +91,7 @@ function is_sidebar_active($index) {
 }
 
 //Add Custom connect Widget
-// require_once('widgets/connectWidget.php');
+require_once('widgets/connectWidget.php');
 
 /**
  * Home Slider Custom Post Type
@@ -118,7 +118,38 @@ add_action('admin_menu', 'mb_theme_page');
 
 function mb_theme_page() {
 	if (count($_POST) > 0 && isset($_POST['mb_settings'])) {
-		$options = array('logo_img', 'logo_alt','contact_email','contact_text','main_email','linkedin_link','twitter_user','facebook_link','keywords','description','analytics','copyright','home_box1','home_box1_link','home_box2','home_box2_link','home_box3','home_box3_link','home_box4','home_box4_link','home_box5','home_box5_link','footer_actions','actions_hide','slider_enable','slider_prevnext','slider_dots','home_blurb','hb_title_enable','blurb_enable','blurb_title_enable','base_width_setting');
+		$options = array(
+			'base_width_setting',
+			'logo_img',
+			'logo_alt',
+			'main_email',
+			'main_email_subject',
+			'facebook_link',
+			'twitter_user',
+			'linkedin_link',
+			'display_rss',
+			'slider_enable',
+			'slider_prevnext',
+			'slider_dots',
+			'home_box1',
+			'home_box1_link',
+			'home_box2',
+			'home_box2_link',
+			'home_box3',
+			'home_box3_link',
+			'home_box4',
+			'home_box4_link',
+			'home_box5',
+			'home_box5_link',
+			'hb_title_enable',
+			'home_blurb',
+			'blurb_enable',
+			'blurb_title_enable',
+			'copyright',
+			'keywords',
+			'description',
+			'analytics'			
+		);
 	
 		foreach ($options as $opt) {
 			delete_option ( 'mb_'.$opt, $_POST[$opt] );
@@ -201,7 +232,15 @@ function mb_settings() {?>
 					</tr>
 					<tr valign="top">
 						<th scope="row">
-							<label for="twitter_user">Twitter Username</label>
+							<label for="main_email_mailto_subject">Default Subject for Email</label>
+						</th>
+						<td>
+							<input name="main_email_subject" type="text" id="main_email_subject" value="<?php echo get_option('mb_main_email_subject'); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for="twitter_user">Twitter Username (ex: @twitter)</label>
 						</th>
 						<td>
 							<input name="twitter_user" type="text" id="twitter_user" value="<?php echo get_option('mb_twitter_user'); ?>" class="regular-text" />
@@ -221,6 +260,21 @@ function mb_settings() {?>
 						</th>
 						<td>
 							<input name="linkedin_link" type="text" id="linkedin_link" value="<?php echo get_option('mb_linkedin_link'); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="display_rss">Display RSS Link</label>
+						</th>
+						<td>
+							<select name="display_rss" id="display_rss">
+								<option value="no" <?php if(get_option('mb_display_rss') == 'no'){?>selected="selected"<?php }?>>
+									No
+								</option>
+								<option value="yes" <?php if(get_option('mb_display_rss') == 'yes'){?>selected="selected"<?php }?>>
+									Yes
+								</option>
+							</select>
 						</td>
 					</tr>
 				</table>
