@@ -55,6 +55,12 @@ class mb_connectWidget extends WP_Widget {
                echo '" class="twitter" target="_blank">Twitter</a></li>';
           }
 
+          if (get_option('mb_youtube_link') != "") {
+               echo '<li><a href="';
+               echo get_option('mb_youtube_link');
+               echo '" class="youtube" target="_blank">YouTube</a></li>';
+          }
+
           if (get_option('mb_linkedin_link') != "") {
                echo '<li><a href="';
                echo get_option('mb_linkedin_link');

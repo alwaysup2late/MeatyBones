@@ -14,6 +14,7 @@ function mb_theme_page() {
 			'main_email_subject',
 			'facebook_link',
 			'twitter_user',
+			'youtube_link',
 			'linkedin_link',
 			'display_rss',
 			'slider_enable',
@@ -138,6 +139,14 @@ function mb_settings() {?>
 						</th>
 						<td>
 							<input name="facebook_link" type="text" id="facebook_link" value="<?php echo get_option('mb_facebook_link'); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr valign="top">
+						<th scope="row">
+							<label for="youtube_link">YouTube Link</label>
+						</th>
+						<td>
+							<input name="youtube_link" type="text" id="youtube_link" value="<?php echo get_option('mb_youtube_link'); ?>" class="regular-text" />
 						</td>
 					</tr>
 					<tr valign="top">
