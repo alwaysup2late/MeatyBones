@@ -1,4 +1,4 @@
-MeatyBones V1.0.9
+MeatyBones V1.1
 =================
 
 MeatyBones is a WordPress base framework that is similar to the <a href="http://themble.com/bones/" target="_blank">Bones</a> framework in that it is a clean slate ready for an asthetic makeover. MB is an improvement in that there are more configurable options and features included and many common widget and content areas are included as well. The latest iteration of MeatyBones is using the 1% Grid developed by <a href="http://onepcssgrid.mattimling.com/" target="_blank">Matt Imling</a>. This grid has been included in page/post templates ready for use as well as the home page template.
@@ -101,6 +101,7 @@ Options Panel
 <li>Default Subject for Email</li>
 <li>Twitter Username (ex: @twitter)</li>
 <li>Facebook link</li>
+<li>YouTube Link</li>
 <li>LinkedIn link</li>
 <li>Display RSS Link</li>
 </ul>
