@@ -48,87 +48,33 @@
 		</section>
 	</footer>
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/vendor/selectnav.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/global.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
+<script type="text/javascript">MB.PageData.baseURL = "<?php bloginfo('template_directory'); ?>";</script>
+
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>//js/vendor/selectnav.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/module/mobileNav.js"></script>
+
 <?php if (get_option('mb_slider_enable') == 'yes' && is_front_page()) {?>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/vendor/swipe.js"></script>
-<script type="text/javascript">
-	setTimeout(function () {
-		window.mySwipe = new Swipe(document.getElementById("slider"), {
-			startSlide: 0,
-			speed: 400,
-			auto: 3000,
-			continuous: true,
-			disableScroll: false,
-			stopPropagation: false,
-			callback: function(index, elem) {
-				updateActiveDot();
-			},
-			transitionEnd: function(index, elem) {}
-		});
-	}, 100);
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/vendor/swipe.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/module/slider.js"></script>
+	<script type="text/javascript">
+		MB.Slider.initSlider();
+	</script>
 
 	<?php if (get_option('mb_slider_prevnext') == "yes") {?>
-		var prevbutton = document.getElementById('prev'),
-			nextbutton = document.getElementById('next');
-
-		prevbutton.onclick = function(event) {
-			event.preventDefault();
-			mySwipe.prev();
-		}
-
-		nextbutton.onclick = function(event) {
-			event.preventDefault();
-			mySwipe.next();
-		}
+	<script type="text/javascript">
+		MB.Slider.initPrevNext();
+	</script>
 	<?php }?>
-
+	
 	<?php if (get_option('mb_slider_dots') == "yes") {?>
-		setTimeout(function() {
-			var slideControls = document.getElementById('slideControls'),
-				numberSlides = mySwipe.getNumSlides();
-
-			for (var i=0; i < numberSlides; i++) {
-				var item = document.createElement("li");
-				
-				item.innerHTML = '<a href="#">'+ [i] + '</a>';
-
-				slideControls.appendChild(item);
-
-				var firstLi = slideControls.childNodes[0];
-				firstLi.classList.add("active")
-			}
-
-			getEventTarget = function(event) {
-				event = event || window.event;
-				return event.target || event.srcElement; 
-			}
-
-			slideControls.onclick = function(event) {
-				var target = getEventTarget(event);
-
-				event.preventDefault();
-				
-				if (target.tagName == 'A') {
-					mySwipe.slide(target.innerHTML, 400);
-				}
-			};
-
-			updateActiveDot = function() {
-				var dots = document.getElementById('slideControls').getElementsByTagName('li'),
-					position = mySwipe.getPos();
-
-				var i = dots.length;
-				while (i--) {
-					dots[i].className = '';
-				}
-
-				dots[position].className = 'active';
-			}
-		}, 100);
+	<script type="text/javascript">
+		MB.Slider.buildIndexDots();
+		MB.Slider.initIndexControls();
+	</script>
 	<?php }?>
-</script>
 <?php }?>
+
 <?php 
 	if (get_option('mb_analytics') <> "") { 
 		echo stripslashes(stripslashes(get_option('mb_analytics'))); 
